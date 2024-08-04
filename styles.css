@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f0f0f, #2a2a2a); /* Gradiente oscuro para el fondo */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal con fondo oscuro y efecto de vidrio */
+.container {
+    width: 400px;
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro translúcido */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    padding: 20px;
+    backdrop-filter: blur(15px); /* Desenfoque de fondo */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil para efecto de vidrio */
+    position: relative;
+}
+
+/* Título centrado */
+h1 {
+    text-align: center;
+    color: #ffffff; /* Color blanco para el texto */
+    margin-bottom: 20px;
+}
+
+/* Estilos para el switch entre registros y formulario */
+.switch {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.switch button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    cursor: pointer;
+    color: #ffffff; /* Color blanco para el texto */
+    font-size: 16px;
+    flex: 1;
+    margin: 0 5px;
+    backdrop-filter: blur(10px); /* Desenfoque de fondo */
+}
+
+.switch button.active {
+    background: rgba(255, 255, 255, 0.3); /* Fondo translúcido más opaco cuando está activo */
+}
+
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para las etiquetas del formulario */
+label {
+    margin-bottom: 5px;
+    display: block;
+    color: #ffffff; /* Color blanco para el texto */
+}
+
+/* Estilos para los campos de entrada */
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra interna sutil */
+    background: rgba(255, 255, 255, 0.2); /* Fondo translúcido para los campos */
+    color: #ffffff; /* Color blanco para el texto */
+}
+
+/* Estilos para el botón del formulario */
+button {
+    padding: 15px;
+    background: #007bff; /* Azul elegante */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    color: #ffffff; /* Color blanco para el texto */
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3; /* Azul más oscuro en hover */
+}
+
+/* Estilos para mostrar/ocultar las vistas */
+.view {
+    display: none;
+}
+
+.view.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+/* Estilos generales del contenedor de los registros */
+.records-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo blanco con opacidad */
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* Efecto de desenfoque de fondo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil para el efecto de vidrio */
+}
+
+/* Estilos individuales para cada registro */
+.record {
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con mayor opacidad para el efecto de vidrio */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para destacar el registro */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque de fondo */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde sutil para el efecto de vidrio */
+    color: #333; /* Color del texto */
+}
+
+/* Espaciado y color del texto dentro del registro */
+.record p {
+    margin: 5px 0; /* Espaciado entre líneas */
+}
+
+/* Mensaje de respuesta */
+#response-message {
+    margin-top: 20px;
+    text-align: center;
+    color: #ffffff; /* Color blanco para el texto */
+}
